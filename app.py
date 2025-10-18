@@ -69,5 +69,6 @@ def uploaded_file(filename):
 
 if __name__ == '__main__':
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-    app.run(host='192.168.8.106' , port=5000 , debug=True)
+    port = int(os.environ.get('port', 10000))
+    app.run(host='0.0.0.0' , port=port)
    # app.run(debug=True)
