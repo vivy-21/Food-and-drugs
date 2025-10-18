@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+    <title>Upload a Photo</title>
+</head>
+<body>
+    <h1>Upload a Photo</h1>
+
+    <!-- The form that lets you upload a file -->
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
